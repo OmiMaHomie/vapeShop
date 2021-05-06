@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+hr {
+    background-color: black;
+    border-color: black;
+    width: 5px;
+    width: 100%;
+}
+
+b {
+    color: black;
+}
+
+#popup-parent {
+    background-color: rgb(219, 219, 219);
+}
+
+#popup-parent {
+    border-style: solid;
+    width: 40%;
+    min-width: 300px;
+    height: 40%;
+    min-height: 300px;
+    padding: 0 25px 25px 25px;
+    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#popup-text-body {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: stretch;
+    justify-items: flex-start;
+    flex-direction: column;
+}
+
+.popup-title, .popup-p, button {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(66, 66, 66);
+}
+
+button, .popup-title {
+    font-size: 2rem;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 0, 47);
+    transition: transform 500ms;
+}
+
+#button1:hover, #button2:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
