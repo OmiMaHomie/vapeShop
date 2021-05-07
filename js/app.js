@@ -10,6 +10,6 @@ document.getElementById('button1').onclick = function () {
 }
 
 //When button2 is pressed, send user back to google.
-function goTo () {
+function exit () {
     window.location.href="http://www.google.com";
 }

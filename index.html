@@ -9,22 +9,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div id = "popup-parent">
-        <div id = 'popup-text-body'>
-            <h1 class = 'popup-title'> <b>Age Verification</b></h1>
-            <hr>
-            <p class = 'popup-p'> By clicking the <b>ENTER</b> button, I am ceritifying that I am over the age of <b>21</b> and comply with the statement stated here.</p>
-            
-            <button id = "button1"> <b>E N T E R</b></button>
-            <p class = 'popup-p'><b>OR</b></p>
-            <button onclick = "goTo();" id = "button2"> <b>E X I T</b></button>
-            </div>
-        </div> 
-    </div>
+    <div id = "popup">
+        <div id = "popup-body">
+            <h1 class = "popup-title"> Age Verification</h1>
+            <h5 class = "popup-subtitle"> By clicking the <b>ENTER</b> button, you verify that you are over the age of <b>21</b>.</h3>
+            <button type = 'button' id = "btn btn-enter">E N T E R</button>
+            <p class = 'popup-text'>OR</p>
+            <button type = 'button' id = 'btn btn-exit' onclick = "exit();">E X I T</button>
+        </div>
+    </div> 
 
     <main id = "main-text">
         <div id = 'warning'>
-            <p>Warning: Products sold here contain nicotine.</p>
+            
         </div>
     </main>
     
