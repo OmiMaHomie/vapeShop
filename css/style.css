@@ -1,15 +1,23 @@
 body {
     background-color: rgb(201, 201, 201) !important;
+    height: 100%;
 }
 
-.card {
+#popup-card {
     position: fixed;
+    min-width: 30%;
     max-width: 50%;
-    max-height: 40%;
     width: auto;
-    height: auto;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20%;
+    height: 100%;
+    left: 25%;
 }
 
+#popup-btn {
+    width: 100%;
+    transition: 500ms;
+}
+
+#popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}

@@ -9,20 +9,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div id = "popup">
-        <div id = "popup-body">
-            <h1 class = "popup-title"> Age Verification</h1>
-            <h5 class = "popup-subtitle"> By clicking the <b>ENTER</b> button, you verify that you are over the age of <b>21</b>.</h3>
-            <button type = 'button' id = "btn btn-enter">E N T E R</button>
-            <p class = 'popup-text'>OR</p>
-            <button type = 'button' id = 'btn btn-exit' onclick = "exit();">E X I T</button>
+    <div id = 'popup-card' class = "card">
+        <div id = 'popup-card-body' class = "card-body d-flex flex-column justify-content-center align-items-center">
+            <h1 class = "card-title text-center">
+                Age Verification
+            </h1>
+            <h5 class = "card-subtitle py-2 text-center">
+                By clicking the <b>ENTER</b> button, you certify that you are over the age of <b>21</b> and will comply will all state regualtions with products containing <b>nicotine</b>.
+            </h5>
+            <ul class = "list-group list-group-flush align-self-stretch">
+                <li class = 'list-group-item'>
+                    <a id = 'popup-btn' href = '#' class = 'btn btn-danger btn-lg btn-block' aria-pressed="true" onclick = 'showPage();'>
+                        <b>E N T E R</b>
+                    </a>
+                </li>
+                <li class = 'list-group-item'>
+                    <h5 class = 'card-subtitle text-center'>
+                        OR
+                    </h5>
+                </li>
+                <li class = 'list-group-item'>
+                    <a id = 'popup-btn' href = '#' class = 'btn btn-warning btn-lg btn-block' aria-pressed="true" onclick = 'exit();'>
+                        <b>E X I T</b>
+                    </a>
+                </li>
+            </ul>
+            <p class = 'card-text text-center'>
+                Always enjoy responsibly.
+            </p>
         </div>
     </div> 
 
     <main id = "main-text">
-        <div id = 'warning'>
-            
-        </div>
+        <header>
+            <div id = 'warning-label'>
+                <p class = 'warning-title'>
+                    <b>Warning: Products sold here contain nicotine. Nicotine is an addictive chemical.</b>
+                </p>
+            </div>
+        </header>
     </main>
     
 </body>
