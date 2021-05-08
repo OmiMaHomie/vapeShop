@@ -36,13 +36,21 @@ a:hover {
     }
 
     #warning-label {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     #top-nav {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
+
+    #topCarousel img {
+        width: auto;
+        height: 15rem;
+        max-height: 15rem;
+      }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
