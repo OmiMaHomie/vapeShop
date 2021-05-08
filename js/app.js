@@ -1,4 +1,4 @@
-//Code initally starts of with only the popup.
+//Code initially starts of with only the popup.
 let button = document.getElementById('popup-card');
 let mainText = document.getElementById('main-text');
 mainText.style.visibility = 'hidden';
