@@ -3,27 +3,19 @@ body {
     height: 100%;
 }
 
-#popup-card {
-position: fixed;
-min-width: 30%;
-max-width: 50%;
-width: auto;
-height: 100%;
-left: 25%;
+a {
+    text-decoration: none !important;
+    color: #FBFBFB !important;
+    transition: 500ms;
 }
 
-#popup-btn {
-width: 100%;
-transition: 500ms;
+a:hover {
+    color: red !important;
+    transition: 500ms;
 }
 
-#popup-btn:hover {
-transform: scale(1.1);
-transition: 500ms;
-}
-
-/* start of phone styles */
-@media (max-width: 479px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
     #popup-card {
     position: fixed;
     min-width: 30%;
@@ -32,22 +24,118 @@ transition: 500ms;
     height: 100%;
     left: 5%;
     }
-}
+    
+    #popup-btn {
+    width: 100%;
+    transition: 500ms;
+    }
+    
+    #popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    }
 
-/* start of medium tablet styles */
-@media (max-width: 767px) {
-    #popup-card {
-    position: fixed;
-    min-width: 30%;
-    max-width: 65%;
-    width: auto;
-    height: 100%;
-    left: 17.5%;
+    #warning-label {
+        font-size: 0.7rem;
+    }
+
+    #top-nav {
+        display: flex;
+        flex-direction: row;
     }
 }
 
-/* start of large tablet styles */
-@media (max-width: 991px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    #popup-card {
+    position: fixed;
+    min-width: 30%;
+    max-width: 75%;
+    width: auto;
+    height: 100%;
+    left: 12.5%;
+    }
     
+    #popup-btn {
+    width: 100%;
+    transition: 500ms;
+    }
+    
+    #popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    }
+
+    #warning-label {
+        font-size: 0.8rem;
+    }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    #popup-card {
+    position: fixed;
+    min-width: 30%;
+    max-width: 50%;
+    width: auto;
+    height: 100%;
+    left: 25%;
+    }
     
+    #popup-btn {
+    width: 100%;
+    transition: 500ms;
+    }
+    
+    #popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #popup-card {
+    position: fixed;
+    min-width: 30%;
+    max-width: 50%;
+    width: auto;
+    height: 100%;
+    left: 25%;
+    }
+    
+    #popup-btn {
+    width: 100%;
+    transition: 500ms;
+    }
+    
+    #popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    #popup-card {
+    position: fixed;
+    min-width: 30%;
+    max-width: 50%;
+    width: auto;
+    height: 100%;
+    left: 25%;
+    }
+    
+    #popup-btn {
+    width: 100%;
+    transition: 500ms;
+    }
+    
+    #popup-btn:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    }
+}
+
