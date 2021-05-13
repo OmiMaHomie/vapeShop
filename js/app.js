@@ -1,7 +1,7 @@
 //Code initially starts of with only the popup.
 let button = document.getElementById('popup-card');
 let mainText = document.getElementById('main-text');
-//mainText.style.visibility = 'hidden';
+// mainText.style.visibility = 'hidden';
 
 //When button1 is pressed, buttonValue becomes true.
 function showPage() {
