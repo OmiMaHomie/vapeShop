@@ -67,16 +67,18 @@ max-height: 15rem;
     margin-left: 10%;
 }
 
-#other-showcase-body img {
+#other-showcase-body img, #other-showcase-body figcaption {
     max-height: 300px;
     height: auto;
     max-width: 90%;
-    width: auto;
+    width: 90;
     margin-left: 5%;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
     #popup-card {
     position: fixed;
@@ -100,11 +102,30 @@ max-height: 15rem;
     #warning-label {
         font-size: 0.8rem;
     }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    #admin {
+        font-size: 1em !important;
+    }
+
+    #topCarouselBody {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #topCarouselItem {
+        max-width: 450px;
+        width: auto;
+        max-height: 350px;
+        height: auto;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
     #popup-card {
     position: fixed;
     min-width: 30%;

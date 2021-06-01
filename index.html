@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <div id = 'popup-card' class = "card">
+    <!--<div id = 'popup-card' class = "card bg-dark">
         <div id = 'popup-card-body' class = "card-body d-flex flex-column justify-content-center align-items-center">
-            <h1 class = "card-title text-center">
+            <h1 class = "card-title text-center text-light">
                 Age Verification
             </h1>
-            <h5 id = 'text' class = "card-subtitle py-2 text-center">
+            <h5 id = 'text' class = "card-subtitle py-2 text-center text-light">
                 By clicking the <b>ENTER</b> button, you certify that you are over the age of <b>21</b> and will comply will our Terms & Conditions.
             </h5>
             <ul class = "list-group list-group-flush align-self-stretch">
@@ -39,7 +39,7 @@
                 Always enjoy responsibly.
             </p>
         </div>
-    </div>  -->
+    </div> -->
    
     <main id = "main-text">
         <header>
@@ -61,60 +61,62 @@
                 </a>
             </div>
         </nav>
-
+    
         <div id="topCarousel" class="carousel slide mt-2 bg-secondary" data-ride = 'carousel'>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+                <div class="carousel-item active">
                 <img class="d-block w-100" src="/vapeShop/images/img2.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                 <img class="d-block w-100" src="/vapeShop/images/img3.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                 <img class="d-block w-100" src="/vapeShop/images/img4.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#topCarousel" role="button" data-bs-target="#topCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#topCarousel" role="button" data-bs-target="#topCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-        </div>
-
-        <div id = 'pop-items' class = 'container-fluid bg-secondary text-light mt-2'>
-            <div class = 'container-body d-flex flex-column justify-content-center'>
-                <h3 class = 'text-center pt-2'>Our Most Popular Items</h1>
-                <h6 class = 'text-center'>Here are some of our best-selling products</h5>
-                <div id = 'pop-item-carousel' class = 'carousel slide mt-2' data-ride = 'carousel'>
-                    <div class = 'carousel-inner'>
-                        <div class = 'carousel-item active'>
-                            <img class = 'd-block w-100' src = '/vapeShop/images/img5.jpg' alt = 'First slide'>
-                            <figcaption class = 'text-center'>
-                                <h6>Item</h6>
-                            </figcaption>
-                        </div>
-                        <div class = 'carousel-item'>
-                            <img class = 'd-block w-100' src = '/vapeShop/images/img1.png' alt = 'First slide'>
-                            <figcaption class = 'text-center'>
-                                <h6>Item</h6>
-                            </figcaption>
-                        </div>
-                    </div>
-                    <div id = 'pop-item-btns' class = 'w-50 d-flex flex-row justify-content-around pb-2'>
-                        <a class="carousel-controls-prev" href="#pop-item-carousel" role="button" data-bs-target="#pop-item-carousel" data-bs-slide="prev">
-                            <button class = 'btn btn-primary text-light btn-sm btn-block ' aria-pressed="true"><--</button>
-                        </a>
-                        <a class="carousel-controls-next" href="#pop-items-carousel" role="button" data-bs-target="#pop-item-carousel" data-bs-slide='next'>
-                            <button href = "#" class = 'btn btn-primary text-light btn-sm btn-block'>--></button>
-                        </a>
-                    </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#topCarousel" role="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#topCarousel" role="button" data-bs-target="#topCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
         </div>
-
+    
+        <div id = 'topCarouselBody'>
+            <div id = 'pop-items' class = 'container-fluid bg-secondary text-light mt-2'>
+                <div class = 'container-body d-flex flex-column justify-content-center'>
+                    <h3 class = 'text-center pt-2'>Our Most Popular Items</h1>
+                    <h6 class = 'text-center'>Here are some of our best-selling products</h5>
+                    <div id = 'pop-item-carousel' class = 'carousel slide mt-2' data-ride = 'carousel'>
+                        <div class = 'carousel-inner'>
+                            <div class = 'carousel-item active'>
+                                <img id = 'topCarouselItem' class = 'd-block w-100' src = '/vapeShop/images/img5.jpg' alt = 'First slide'>
+                                <figcaption class = 'text-center'>
+                                    <h6>Item</h6>
+                                </figcaption>
+                            </div>
+                            <div class = 'carousel-item'>
+                                <img id = 'topCarouselItem' class = 'd-block w-100' src = '/vapeShop/images/img1.png' alt = 'First slide'>
+                                <figcaption class = 'text-center'>
+                                    <h6>Item</h6>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div id = 'pop-item-btns' class = 'w-50 d-flex flex-row justify-content-around pb-2'>
+                            <a class="carousel-controls-prev" href="#pop-item-carousel" role="button" data-bs-target="#pop-item-carousel" data-bs-slide="prev">
+                                <button class = 'btn btn-primary text-light btn-sm btn-block ' aria-pressed="true"><--</button>
+                            </a>
+                            <a class="carousel-controls-next" href="#pop-items-carousel" role="button" data-bs-target="#pop-item-carousel" data-bs-slide='next'>
+                                <button href = "#" class = 'btn btn-primary text-light btn-sm btn-block'>--></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
         <div class = 'container-fluid d-flex flex-column justify-content-start my-5'>
             <h1 class = 'text-start fw-bold text-dark'>
                 Welcome to Store!
@@ -126,55 +128,76 @@
                 You must be 21 years or older to order products here.
             </h5>
         </div>
-    </main>
 
-    <div class = 'container-fluid my-1'>
-        <h1 class = 'text-center fw-bold text-dark'>
-            Our store includes a wide variety of:
-        </h1>
-    </div>
+        <div class = 'container-fluid my-1'>
+            <h1 class = 'text-center fw-bold text-dark'>
+                Our store includes a wide variety of:
+            </h1>
+        </div>
 
-    <div id = 'showcase-imgs' class = 'd-flex flex-column justify-content-center'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/accessories.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/cartridges.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/cbd.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/coils.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/e-liquids.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/glasses.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/grinders.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/hookahs.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/kratom.png' alt = 'E-Liquids'>
-        <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/mod.png' alt = 'E-Liquids'>
-    </div>
+        <div id = 'showcase-imgs' class = 'd-flex flex-column justify-content-center'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/accessories.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/cartridges.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/cbd.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/coils.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/e-liquids.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/glasses.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/grinders.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/hookahs.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/kratom.png' alt = 'E-Liquids'>
+            <img class = 'd-block w-100 pb-3' src = '/vapeShop/images/mod.png' alt = 'E-Liquids'>
+        </div>
 
-    <div class = "container-fluid w-100 d-flex flex-column">
-        <h3 class = 'fw-bold text-dark text-right'>
-            A word from the Owner:
-        </h3>
-        <h5 class = 'fw-light text-dark text-right'>
-            Ispum Lorem
-        </h5>
-        <p class = 'fw-bold text-dark text-right'>
-            - Bikrant
-        </p>
-    </div>
+        <div class = "container-fluid w-100 d-flex flex-column">
+            <h3 class = 'fw-bold text-dark text-right'>
+                A word from the Owner:
+            </h3>
+            <h5 class = 'fw-light text-dark text-right'>
+                Ispum Lorem
+            </h5>
+            <p class = 'fw-bold text-dark text-right'>
+                - Bikrant
+            </p>
+        </div>
 
-    <div id = 'other-showcase' class = 'container-fluid w-100 bg-secondary'>
-        <h1 class = 'text-light text-center py-3'>
-            Other Items
-        </h1>
-        <h6 class = 'text-light text-center py-1'>
-            We work with the top brands to bring you the most popular products each month.
-        </h6>
-        <div id = 'other-showcase-body' class = 'd-flex flex-row justify-content-center align-items-center'>
-            <div id = 'showcase-item'>
-                <img class = 'd-block w-100' src = '/vapeShop/images/puffcoPlus.jpg' alt = 'puffcoPlus'>
-                <figcaption id = 'otherShowcaseFig' class = 'bg-dark text-light text-center'>
-                    Puffco Plus
-                </figcaption>
+        <div id = 'other-showcase' class = 'container-fluid w-100 bg-secondary'>
+            <h1 class = 'text-light text-center py-3'>
+                Other Items
+            </h1>
+            <h6 class = 'text-light text-center py-1'>
+                We work with the top brands to bring you the most popular products each month.
+            </h6>
+            <div id = 'other-showcase-body' class = 'w-100 d-flex flex-row justify-content-center align-items-center py-3'>
+                <div id = 'showcase-item'>
+                    <img id = 'otherShowcaseItem' class = 'd-block w-100' src = '/vapeShop/images/puffcoPlus.jpg' alt = 'puffcoPlus'>
+                    <figcaption id = 'otherShowcaseFig' class = 'bg-dark text-light text-center'>
+                        Puffco Plus
+                    </figcaption>
+                </div>
+            </div>
+
+            <div id = 'other-showcase-body' class = 'd-flex flex-row justify-content-center align-items-center py-3'>
+                <div id = 'showcase-item'>
+                    <img id = 'otherShowcaseItem' class = 'd-block w-100' src = '/vapeShop/images/lucidLightingPeak.jpg' alt = 'puffcoPlus'>
+                    <figcaption id = 'otherShowcaseFig' class = 'bg-dark text-light text-center'>
+                        Lucid Lighting Peak
+                    </figcaption>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div id = 'sub-footer' class = 'container-fluid bg-info d-flex flex-row justify-content-around py-2'>
+            <a class = 'fs-3 text-dark' href = '#'> Contact us</a>
+
+            <a class = 'fs-3 text-dark' href = "#"> Our Locations</a>
+        </div>
+
+        <footer class = 'bg-dark'>
+            <img class = 'mx-auto d-block w-25 pt-3' src = '/vapeShop/images/img1.png'>
+
+            <a id = 'admin' class = 'text-dark' href = '#'>Admin Only</a>    
+        </footer>
+    </main>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
