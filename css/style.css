@@ -44,6 +44,14 @@ justify-content: space-between;
 width: 100%;
 }
 
+#location-body {
+    background-color: white;
+    padding-top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)    
+}
+ 
 #topCarousel img {
 width: auto;
 height: 15rem;
@@ -74,8 +82,6 @@ max-height: 15rem;
     width: 90;
     margin-left: 5%;
 }
-
-
 
 
 /* Small devices (portrait tablets and large phones, 576px and up) */

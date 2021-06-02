@@ -53,14 +53,25 @@
         <nav class = 'navbar navbar-dark bg-secondary'>
             <div id = 'top-nav' class = 'container'>
                 <img src = '/vapeShop/images/img1.png' alt = '' width = '15%' height = '15%'>
-                <a id = 'nav-link light' class = 'navbar link' href = '#'>
+                <a id = '' class = 'navbar link light' href = '#'>
                     Brand Name
                 </a>
-                <a id = 'nav-link light' class = 'navbar-link' href = '#'>
+                <a id = 'locationBtn' class = 'navbar-link light' onclick="showCard();">
                     Locations
                 </a>
             </div>
         </nav>
+
+        <div id = 'location-card' class = ' card'>
+            <div id = 'location-body' class = 'h-25 position-absolute card-body d-inline-flex flex-column justify-content-center align-items-center'>
+                <h3 class = 'card-title'> Locations</h3>
+                <h6 class = 'card-subtitle pt-2 text-muted'> Location 1:</h6>
+                <p class = 'card-text'> Location 1</p>
+                <h6 class = 'card-subtitle pt-2 text-muted'> Location 2:</h6>
+                <p class = 'card-text' onclick=""> Location 2</p> 
+                <a id = 'closeCard' class = 'card-link text-dark' onclick="closeCard();"> Return</a>
+            </div>
+        </div>
     
         <div id="topCarousel" class="carousel slide mt-2 bg-secondary" data-ride = 'carousel'>
             <div class="carousel-inner">
@@ -189,13 +200,13 @@
         <div id = 'sub-footer' class = 'container-fluid bg-info d-flex flex-row justify-content-around py-2'>
             <a class = 'fs-3 text-dark' href = '#'> Contact us</a>
 
-            <a class = 'fs-3 text-dark' href = "#"> Our Locations</a>
+            <a id = 'locationBtn' class = 'fs-3 text-dark' href = "#location-card" onclick="showCard();"> Our Locations</a>
         </div>
 
         <footer class = 'bg-dark'>
             <img class = 'mx-auto d-block w-25 pt-3' src = '/vapeShop/images/img1.png'>
 
-            <a id = 'admin' class = 'text-dark' href = '#'>Admin Only</a>    
+            <a id = 'admin' class = 'text-dark'>Admin Only</a>    
         </footer>
     </main>
     
