@@ -78,9 +78,10 @@ max-height: 15rem;
 #other-showcase-body img, #other-showcase-body figcaption {
     max-height: 300px;
     height: auto;
-    max-width: 90%;
-    width: 90;
-    margin-left: 5%;
+    max-width: 75%;
+    width: 100%;
+
+    margin: auto;
 }
 
 
@@ -118,15 +119,15 @@ max-height: 15rem;
     }
 
     #topCarouselBody {
-        width: 80%;
-        margin-left: 10%;
-    }
+        position: relative;
+        display: flex;
+        flex-direction: row;
 
-    #topCarouselItem {
-        max-width: 450px;
+        max-width: 75vw;
         width: auto;
-        max-height: 350px;
-        height: auto;
+        height: auto;   
+
+        margin:auto;
     }
 }
 
@@ -149,6 +150,17 @@ max-height: 15rem;
     #popup-btn:hover {
     transform: scale(1.1);
     transition: 500ms;
+    }
+
+    #topCarouselBody {
+        width: 50vw;
+    }
+
+    #showcase-imgs img {
+        max-width: 75%;
+        width: auto;
+
+        margin: auto;
     }
 }
 
