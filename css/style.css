@@ -9,6 +9,14 @@ a {
     transition: 500ms;
 }
 
+#popup-btn {
+    color: white !important;
+}
+
+#admin:hover {
+    color: rgb(41, 43, 44) !important;
+}
+
 a:hover {
     color: red !important;
     transition: 500ms;

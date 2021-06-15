@@ -4,7 +4,7 @@ let mainText = document.getElementById('main-text');
 let locationBtn = document.getElementById('locationBtn');
 let locationCard = document.getElementById('location-card');
 locationCard.style.visibility = 'hidden';
-//mainText.style.visibility = 'hidden';
+mainText.style.visibility = 'hidden';
 
 //When button1 is pressed, buttonValue becomes true.
 function showPage() {
