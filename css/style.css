@@ -1,0 +1,46 @@
+/*General properties for general purpose items here*/
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0px;
+}
+
+#text-muted {
+    opacity: 75%;
+}
+
+.link:hover {
+    color: red !important;
+    transition: 1s !important;
+}
+
+/*ID-specific properties here*/
+
+#age-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 155, 155);
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#age-popup-img {
+    width: 18rem;
+}
+
+#age-popup-btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#age-popup-btn {
+    padding: 5% 2.5%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
