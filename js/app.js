@@ -17,7 +17,7 @@ function showPage () {
 }
 
 
-//Slider controls
+//Top slideshow controls
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -40,4 +40,30 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+}
+
+
+//Item slideshow controls
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+// Next/previous controls
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+// Thumbnail image controls
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("slides1");
+  if (n > slides1.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+  }
+  slides1[slideIndex1-1].style.display = "block";
 }
