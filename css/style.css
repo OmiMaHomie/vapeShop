@@ -14,12 +14,17 @@ html, body {
     opacity: 75%;
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
 .link:hover {
     color: red !important;
     transition: 1s !important;
 }
 
-/*ID-specific properties here*/
+/*age-popup properties here*/
 
 #age-popup {
     display: flex;
@@ -51,6 +56,8 @@ html, body {
     color: white;
 }
 
+/*General properties here*/
+
 #warning {
     width: 100%;
     text-align: center;
@@ -59,7 +66,7 @@ html, body {
 }
 
 nav {
-    background-color: rgb(155, 155, 155);
+    background-color: rgba(155, 155, 155);
 }
 
 #nav-body {
@@ -195,9 +202,67 @@ to {opacity: 1}
 
 .prev1 {
     left: 5%;
-    border-radius: 3px 0 0 3px;s
+    border-radius: 3px 0 0 3px;
 }
 
 .prev1:hover, .next1:hover {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*General properties*/
+
+#showcase-imgs-body {
+    text-align: center;
+}
+
+.showcase-img {
+    width: 90%;
+    height: 10rem;
+    padding-bottom: 10px;
+}
+
+#other-items-body {
+    background-color: rgb(155, 155, 155, 0.8) !important;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+#other-items-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#other-item {
+    margin: auto;
+    width: 80%;
+    background-color: seashell;
+    margin-bottom: 10px;
+}
+
+.other-item-img {
+    width: 100%;
+    height: 20rem;
+}
+
+#footer-nav-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer-img {
+    width: 75%;
+    height: 12rem;
 }
