@@ -1,19 +1,37 @@
-//Page display controls
+//page display controls
 //initial vars and settings
-var agePopup = document.getElementById("age-popup");
-var mainText = document.getElementById("main");
-// agePopup.style.display = 'initial';
-// mainText.style.display = 'none';
+const agePopup = document.getElementById("age-popup");
+const contactPopup = document.getElementById("contact-popup");
+const locationPopup = document.getElementById("location-popup");
+const mainText = document.getElementById("main");
+agePopup.style.display = "initial";
+contactPopup.style.display = "none";
+locationPopup.style.display = "none";
+mainText.style.display = "none";
 
-//makes the user leave the page to google
-function leaveSite () {
-    window.location.href = "https://www.google.com/";
+//shows page when users accepts warning
+function showPage () {
+  agePopup.style.display = "none";
+  contactPopup.style.display = "none";
+  locationPopup.style.display = "none";
+  mainText.style.display = "initial";
 }
 
-//shows main page and hides age popup
-function showPage () {
-    agePopup.style.display = 'none';
-    mainText.style.display = 'initial';
+//shows contact page 
+function showContact () {
+  mainText.style.display = "none";
+  contactPopup.style.display = "initial";
+}
+
+//shows location page 
+function showLocation () {
+  mainText.style.display = "none";
+  locationPopup.style.display = "initial";
+}
+
+//forces user to google home screen if declines
+function leaveSite () {
+  window.location.href = "https://www.google.com";
 }
 
 

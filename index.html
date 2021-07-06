@@ -8,7 +8,7 @@
     <title>Vape Shop</title>
 </head>
 <body>
-    <!-- <div id="age-popup">
+    <div id="age-popup">
         <div id="age-popup-body">
             <img id="age-popup-img" src="./images/test.png" alt="logo">
             <div>
@@ -20,18 +20,44 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <div id="contact-popup">
+        <div id="contact-popup-body">
+            <h1>Our Phone Number(s)</h1>
+            <h3>### - ### - ####</h3>
+            <h3>### - ### - ####</h3>
+            <h1>Our Email</h1>
+            <h3>#####@#####.###</h3>
+            <br>
+            <a id="contact-popup-btn" onclick="showPage();" class="link" href="#">Return</a>
+        </div>
+    </div>
+
+    <div id="location-popup">
+        <div id="location-popup-body">
+            <h1>Our location(s)</h1>
+            <br>
+            <h2>Location 1:</h2>
+            <h3>## #### #######, ##, ######</h3>
+            <br>
+            <h2>Location 2:</h2>
+            <h3>## #### #######, ##, ######</h3>
+            <br>
+            <a id="location-popup-btn" onclick="showPage();" class="link" href="#">Return</a>
+        </div>
+    </div>
     
-    <main>
+    <main id="main">
         <div id="warning">
             <h4>Warning: All products sold here contains nicotine. Nicotine is an addictive chemical</h4>
         </div>
 
         <nav>
             <div id="nav-body">
-                <a id="nav-body-link" onclick="" class="link" href="#">Contact Us</a>
+                <a id="nav-body-link" onclick="showContact();" class="link" href="#">Contact Us</a>
                 <img id="nav-body-img" src="./images/test.png" alt="logo">
-                <a id="nav-body-link" onclick="" class="link" href="#">Locations</a>
+                <a id="nav-body-link" onclick="showLocation();" class="link" href="#">Locations</a>
             </div>
         </nav>
 
@@ -78,7 +104,7 @@
             </div>
         </div>
 
-        <article>
+        <article id="text-box">
             <h1>Welcome to Store</h1>
             <h3>Ipsum Lorem</h3>
             <h3>You must be over <b>21 year old</b> to be able to shop at our store.</h3>
@@ -97,7 +123,7 @@
             </div>
         </div>
 
-        <article>
+        <article id="text-box">
             <h1>A word from the owner:</h1>
             <h3><i>"Ipsum Lorem"</i></h3>
             <h3>- Bikrant</h3>
@@ -126,8 +152,8 @@
 
         <nav>
             <div id="footer-nav-body">
-                <a href="#" onclick="" class="link">Contact Us</a>
-                <a href="#" onclick="" class="link">Locations</a>
+                <a onclick="showContact();" class="link" href="#">Contact Us</a>
+                <a onclick="showLocation();" class="link" href="#">Locations</a>
             </div>
         </nav>
 
